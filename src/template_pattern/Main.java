@@ -1,9 +1,7 @@
 package template.pattern;
 
 
-
-
-public class TemplatePattern {
+public class Main {
 
     public static void main(String[] args) {
     

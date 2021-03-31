@@ -3,7 +3,6 @@ package template.pattern;
 
 public class Car extends Vehicle {
 
-    
     @Override
     protected void startEngine() {
         System.out.println("Car: Starting Engine");
