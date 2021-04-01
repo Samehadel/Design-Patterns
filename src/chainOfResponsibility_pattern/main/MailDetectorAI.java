@@ -1,4 +1,4 @@
-package chainofresponsiblity.pattern;
+package chainofresponsiblity.main;
 
 import java.util.Random;
 

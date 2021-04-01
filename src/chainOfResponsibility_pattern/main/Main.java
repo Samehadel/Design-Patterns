@@ -1,4 +1,4 @@
-package chainofresponsiblity.pattern;
+package chainofresponsiblity.main;
 
 import chainofresponsiblity.handlers.FanHandler;
 import chainofresponsiblity.handlers.SpamHandler;
@@ -20,11 +20,7 @@ public class Main {
         Handler spamHandler = new SpamHandler(comHandler); //Second in the chain
         Handler fanHandler = new FanHandler(spamHandler); //First in the chain
         
-        
-        
-        spamHandler.setSuccessor(fanHandler);
-        fanHandler.setSuccessor(comHandler);
-        
+        //Start on chain 
         spamHandler.handleRequest(n);
     }
     

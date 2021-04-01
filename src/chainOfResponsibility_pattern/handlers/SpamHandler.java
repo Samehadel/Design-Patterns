@@ -1,7 +1,7 @@
 package chainofresponsiblity.handlers;
 
-import chainofresponsiblity.pattern.EmailTypes;
-import chainofresponsiblity.pattern.MailDetectorAI;
+import chainofresponsiblity.main.EmailTypes;
+import chainofresponsiblity.main.MailDetectorAI;
 
 public class SpamHandler extends Handler{
 

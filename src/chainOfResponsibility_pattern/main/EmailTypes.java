@@ -1,4 +1,4 @@
-package chainofresponsiblity.pattern;
+package chainofresponsiblity.main;
 
 /*
 Stores the different types of emails that AI Detector can return
