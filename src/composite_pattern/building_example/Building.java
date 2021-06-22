@@ -1,19 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package composite.pattern;
+package composite_pattern.building_example;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author ALKODS
- */
 public class Building implements IStructure{
 
-    private ArrayList<IStructure> houses; 
+    private ArrayList<IStructure> houses;
     private String address; 
     private int buildingNumber; 
     private String name;

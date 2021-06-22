@@ -1,18 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package facade.pattern;
+package facade_pattern.main;
 
-import Car.units.EngineUnit;
+import facade_pattern.car.units.EngineUnit;
 
 /**
  *
  * @author ALKODS
  */
 public class CarOperations {
-    private EngineUnit engine; 
+    private EngineUnit engine;
 
     public CarOperations() {
         engine = new EngineUnit();
