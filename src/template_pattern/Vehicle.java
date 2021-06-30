@@ -1,4 +1,4 @@
-package template.pattern;
+package template_pattern;
 
 public abstract class Vehicle {
     

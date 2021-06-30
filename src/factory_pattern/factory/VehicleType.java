@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package factory.pattern;
+package factory_pattern.factory;
 
-/**
- *
- * @author ALKODS
- */
+
+import factory_pattern.vehicle.Bus;
+import factory_pattern.vehicle.Car;
+import factory_pattern.vehicle.Truck;
+import factory_pattern.vehicle.Vehicle;
+
 public enum VehicleType {
     CAR {
         @Override
