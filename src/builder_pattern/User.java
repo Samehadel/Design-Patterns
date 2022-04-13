@@ -8,7 +8,7 @@ public class User {
     private String address;
     private String phone;
 
-    private User(UserBuilder userBuilder){
+    private User(Builder userBuilder){
         this.username = userBuilder.username;
         this.password = userBuilder.password;
         this.firstName = userBuilder.firstName;
@@ -29,7 +29,7 @@ public class User {
                 '}';
     }
 
-    public static class UserBuilder{
+    public static class Builder {
         private String username;
         private String password;
         private String firstName;
@@ -37,30 +37,35 @@ public class User {
         private String address;
         private String phone;
 
-        public UserBuilder(String username, String password){
+        public Builder(String username, String password){
             this.username = username;
             this.password = password;
         }
-        public UserBuilder firstName(String firstName){
+        public Builder firstName(String firstName){
             this.firstName = firstName;
             return this;
         }
-        public UserBuilder lastName(String lastName){
+        public Builder lastName(String lastName){
             this.lastName = lastName;
             return this;
         }
-        public UserBuilder address(String address){
+        public Builder address(String address){
             this.address = address;
             return this;
         }
-        public UserBuilder phone(String phone){
+        public Builder phone(String phone){
             this.phone = phone;
             return this;
         }
 
         public User build(){
-            return new User(this);
+            User user = new User(this);
+            validateObject(user);
+            return user;
         }
 
+        private void validateObject(User user){
+            // Do some check to validate pre-defined assumptions
+        }
     }
 }
